@@ -1,0 +1,18 @@
+.app {
+  // background-color: #fafbff;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 0 2rem;
+  grid-template-rows: 64px auto;
+  height: inherit;
+  padding: 0 5rem;
+}
+
+@media (max-width: 568px) {
+  .app {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0 1rem;
+    padding: 0 1rem;
+  }
+}

@@ -1,0 +1,69 @@
+.cardOption-control-container {
+  width: 256px;
+  height: 212px;
+  border-radius: 24px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 1px 32px 0px rgba(174, 172, 243, 0.35);
+}
+.cardOption-control-container.selected {
+  border: 3px solid #03050f;
+}
+.card-header {
+  display: flex;
+  justify-content: end;
+  padding: 1rem 1.5rem 0 0;
+}
+.card-checkbox {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #a9afd9;
+}
+.card-checkbox.Selected {
+  background-color: #389e0d;
+  border: 1px solid #389e0d;
+}
+.container-card-info {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5rem;
+}
+.container-icon-card-detail {
+  display: flex;
+  flex-direction: column;
+}
+.container-icon-card {
+  width: 48px;
+  height: 48px;
+}
+.span-title-card {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  margin-top: 0.5rem;
+}
+.span-description-card {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 890px) {
+  .cardOption-control-container {
+    width: 100%;
+    height: 160px;
+  }
+  .container-icon-card-detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .span-title-card {
+    margin-left: 0.5rem;
+  }
+}

@@ -1,0 +1,222 @@
+.home {
+  display: contents; /* Las columnas serán parte de la misma grilla */
+  height: inherit;
+}
+.home-container {
+  position: relative;
+  grid-column: 1 / -1;
+  margin-top: 2rem;
+  z-index: 10;
+}
+
+/* ====== Blur's ======= */
+.left-blur-purple {
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  position: absolute;
+}
+.rigth-blur-skyBlue {
+  top: 0;
+  right: 0;
+  height: 100%;
+  position: absolute;
+}
+
+.left-blur-purple-mobile {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  display: none;
+}
+.rigth-blur-skyBlue-mobile {
+  top: 0;
+  right: 0;
+  position: absolute;
+  display: none;
+}
+
+/* ===== Components ===== */
+.container-secondary-title {
+  position: absolute;
+  top: 0; /* Centrado verticalmente en relación con la imagen */
+  left: calc(480px + 8rem);
+  width: 352px;
+}
+.green-square-secure {
+  width: 172px;
+  height: 24px;
+  border-radius: 4px;
+  background: linear-gradient(86.01deg, #00f4e2, #00ff7f);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.span-green-square {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+}
+.span-secondary-title {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.container-inputs-login {
+  position: absolute;
+  left: calc(480px + 8rem);
+  top: 120px;
+  width: 352px;
+  margin-top: 0.5rem;
+}
+.span-info-inputs {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+.form-control-container {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.input-phone-login {
+  margin-top: 1rem;
+}
+.input-check-login {
+  width: 20px;
+  height: 20px;
+}
+.input-check-login:checked {
+  width: 20px;
+  height: 20px;
+  background-color: #0a051e !important;
+}
+.checkbox-home {
+  margin-top: 1.5rem;
+}
+.checkbox-home-phone {
+  margin-top: 1.5rem;
+}
+.container-terms-home {
+  margin-top: 0.75rem;
+}
+.a-terms-home {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #03050f;
+}
+.button-form-submit {
+  width: 195px;
+  height: 64px;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  text-align: center;
+  background-color: #03050f;
+  color: #ffffff;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  transition:
+    transform 0.1s ease,
+    box-shadow 0.1s ease;
+}
+.button-form-submit:hover {
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.3);
+}
+.button-form-submit:active {
+  transform: translateY(2px); /* Mueve el botón hacia abajo */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra reducida para el efecto pulsado */
+  background-color: #636363; /* Color de fondo más oscuro al pulsar */
+}
+
+@media (min-width: 1601px) {
+  .home-container {
+    grid-column: 3 / -1;
+    margin-top: 6rem;
+  }
+}
+
+@media (min-width: 1140px) and (max-width: 1600px) {
+  .home-container {
+    grid-column: 2 / -1;
+  }
+}
+
+@media (min-width: 890px) and (max-width: 1120px) {
+  .home-initial-photo {
+    width: auto;
+    height: 440px;
+  }
+  .container-secondary-title {
+    left: calc(420px + 3rem);
+  }
+  .container-inputs-login {
+    left: calc(420px + 3rem);
+  }
+}
+
+@media (max-width: 890px) {
+  .home-container {
+    margin-top: 0;
+  }
+  .left-blur-purple {
+    display: none;
+  }
+  .rigth-blur-skyBlue {
+    display: none;
+  }
+
+  .left-blur-purple-mobile {
+    display: block;
+  }
+  .rigth-blur-skyBlue-mobile {
+    display: block;
+  }
+  .home-initial-photo {
+    flex-wrap: wrap;
+    float: right;
+    width: 136px;
+    margin-bottom: 1.5rem;
+  }
+  .container-secondary-title {
+    position: static;
+    float: left;
+    width: 188px;
+    margin-top: 2rem;
+  }
+  .green-square-secure {
+    width: 151px;
+    height: 20px;
+    margin-bottom: 0.5rem;
+  }
+  .span-green-square {
+    font-size: 12px;
+  }
+  .span-secondary-title {
+    font-size: 28px;
+  }
+
+  .container-inputs-login {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 1.5rem;
+    border-top: 1px solid #ccd1ee;
+  }
+  .container-terms-home {
+    margin-top: 1rem;
+  }
+  .button-form-submit {
+    width: 100%;
+    height: 56px;
+    margin-top: 2.25rem;
+  }
+}

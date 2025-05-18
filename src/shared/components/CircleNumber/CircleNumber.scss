@@ -1,0 +1,17 @@
+.main-container-circleNumber {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #7981b2;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.span-circleNumber {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: #7981b2;
+}

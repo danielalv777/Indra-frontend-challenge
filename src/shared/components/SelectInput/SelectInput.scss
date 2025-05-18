@@ -1,0 +1,34 @@
+.selectInput-control-container {
+  min-width: 100px;
+  display: flex;
+  flex-direction: row;
+}
+.select-container {
+  border: 1px solid #5e6488;
+  height: 56px;
+  width: 40%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+.select-container.errorSelect {
+  border-color: rgb(250, 10, 10);
+}
+.container-input-document {
+  width: 60%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: 0;
+}
+.container-input-document.errorInput {
+  border-color: rgb(250, 10, 10);
+}
+.error-message-selectInput {
+  font-size: 10px;
+  font-weight: 400;
+  color: rgb(250, 10, 10);
+}

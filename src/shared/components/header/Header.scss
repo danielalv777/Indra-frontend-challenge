@@ -1,0 +1,33 @@
+.header {
+    background-color: transparent;
+    grid-column: 1 / -1;
+    height: 64px;
+    
+}
+
+.header nav {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-call-info {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.span-header {
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.2px;
+    margin-right: 1rem;
+}
+
+@media (max-width: 568px) {
+    .span-header {
+        display: none;
+    }
+}
