@@ -48,6 +48,7 @@ src/
 ├── App.tsx                # Entrada principal de la app
 └── main.tsx               # Inicialización de React
 
+```
 
 - Se utilizó una **arquitectura modular basada en features**, que favorece la escalabilidad y el mantenimiento del código.
 
