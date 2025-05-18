@@ -1,54 +1,77 @@
-# React + TypeScript + Vite
+# Indra Frontend Challenge 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación desarrollada como parte del **reto técnico frontend de Indra**. Está construida usando **React + Vite**, con enfoque modular y buenas prácticas modernas de desarrollo frontend.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Tecnologías y bibliotecas utilizadas
 
-## Expanding the ESLint configuration
+| Librería                   | Uso principal                         | Motivo de elección                                           |
+| -------------------------- | ------------------------------------- | ------------------------------------------------------------ |
+| **React 19**               | Framework base para la UI             | Amplio soporte, comunidad y flexibilidad                     |
+| **Vite**                   | Herramienta de build y dev server     | Alta velocidad de desarrollo y compilación                   |
+| **React Hook Form + Yup**  | Manejo y validación de formularios    | Rendimiento superior y validación robusta                    |
+| **Zustand**                | Estado global                         | API simple y minimalista para manejo de estado               |
+| **React Router DOM v7**    | Navegación y enrutamiento             | Control total del enrutamiento y fácil configuración         |
+| **React Query (TanStack)** | Manejo de peticiones y caché de datos | Evita boilerplate en lógica de datos y mejora UX con caching |
+| **Axios**                  | Cliente HTTP                          | API intuitiva y cancelación de peticiones                    |
+| **SASS**                   | Preprocesador CSS                     | Organización modular de estilos                              |
+| **Jest + Testing Library** | Testing                               | Para pruebas unitarias de componentes y hooks                |
+| **ESLint + Prettier**      | Linter y formateo                     | Estilo consistente en todo el proyecto                       |
+| **TypeScript**             | Tipado estático                       | Prevención de errores y mejor DX                             |
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🗂️ Estructura del proyecto
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+src/
+├── app/ # Configuración global
+├── features/ # Funcionalidades divididas por dominio
+├── shared/ # Componentes y utilidades reutilizables
+├── assets/ # Imágenes y estilos
+├── App.tsx # Entrada de la aplicación
+└── main.tsx # Inicialización de React
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Se utilizó una **arquitectura modular basada en features**, que favorece la escalabilidad y el mantenimiento del código.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+---
+
+## 👥 Organización del equipo y tareas
+
+| Miembro | Tareas principales                                         |
+| ------- | ---------------------------------------------------------- |
+| Dev A   | Estructura del proyecto, configuración Vite, estado global |
+| Dev B   | Implementación de componentes y lógica de formularios      |
+| Dev C   | Estilos, diseño responsive y pruebas unitarias             |
+| Todos   | Revisión cruzada de código, documentación y despliegue     |
+
+La colaboración se realizó mediante GitHub (pull requests, branches por feature).
+
+---
+
+## 🚀 Cómo levantar el proyecto
+
+### Requisitos
+
+- Node.js `>=18`
+- pnpm / npm / yarn
+
+### Instalación y ejecución
+
+```bash
+# Clonar el repo
+git clone https://github.com/danielalv777/Indra-frontend-challenge.git
+cd indra-frontend-challenge
+
+# Instalar dependencias
+npm install
+
+# Ejecutar el proyecto en modo desarrollo
+npm run dev
+
+# Compilar para producción
+npm run build
+
+# Ejecutar los tests
+npm run test
 ```
