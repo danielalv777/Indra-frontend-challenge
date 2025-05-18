@@ -24,28 +24,30 @@ Este proyecto es una aplicación desarrollada como parte del **reto técnico fro
 
 ## 🗂️ Estructura del proyecto
 
+```plaintext
 src/
-├── app/ # Configuración global
-│ ├── store/ # Configuración del estado global
-│ └── router.tsx
-├── features/ # Funcionalidades divididas por dominio
-│ └── salud-flexible/
-│ ├── components/ # Componentes de UI específicos
-│ ├── pages/ # Vistas completas
-│ ├── hooks/ # Hooks específicos del feature
-│ ├── services/ # API y lógica de dominio
-│ ├── models/ # Tipos y entidades de dominio
-│ ├── store/ # Estado local/global del feature
-│ └── index.ts
-├── shared/ # Recursos compartidos
-│ ├── components/ # Botones, inputs, layouts reutilizables
-│ ├── utils/ # Funciones utilitarias
-│ ├── hooks/ # Hooks reutilizables
-│ ├── constants/ # Constantes globales
-│ └── types/ # Tipos globales
-├── assets/ # Imágenes y estilos
-├── App.tsx # Entrada principal de la app
-└── main.tsx # Inicialización de React
+├── app/                   # Configuración global
+│   ├── store/             # Estado global (Zustand)
+│   └── router.tsx         # Enrutamiento principal
+├── features/              # Funcionalidades divididas por dominio
+│   └── salud-flexible/
+│       ├── components/    # Componentes de UI específicos
+│       ├── pages/         # Vistas completas
+│       ├── hooks/         # Hooks específicos del feature
+│       ├── services/      # Llamadas a API y lógica de negocio
+│       ├── models/        # Tipos y entidades de dominio
+│       ├── store/         # Estado local/global del feature
+│       └── index.ts       # Entrada del módulo
+├── shared/                # Recursos compartidos
+│   ├── components/        # Botones, inputs, layouts reutilizables
+│   ├── utils/             # Funciones utilitarias
+│   ├── hooks/             # Hooks reutilizables
+│   ├── constants/         # Constantes globales
+│   └── types/             # Tipos globales
+├── assets/                # Imágenes, fuentes, estilos
+├── App.tsx                # Entrada principal de la app
+└── main.tsx               # Inicialización de React
+
 
 - Se utilizó una **arquitectura modular basada en features**, que favorece la escalabilidad y el mantenimiento del código.
 
@@ -89,4 +91,4 @@ npm run build
 
 # Ejecutar los tests
 npm run test
-```
+````
